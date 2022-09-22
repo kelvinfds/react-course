@@ -1,0 +1,12 @@
+.carDetail_Title {
+    color:darkblue;
+    background-color: darkgrey;
+    border-bottom: 2px solid red;
+}
+
+.carDetail_list {
+    color: purple;
+    font-style: oblique;
+    font-size: 14pt;
+    padding: 0;
+}
