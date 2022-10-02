@@ -34,7 +34,7 @@ const Game = ({
         <p>Você ainda tem {guesses} tentativa(s)</p>
         <div className="wordContainer">
           {letters.map((letter, i) => (
-            guessedLetters.includes(letters) ? (
+            guessedLetters.includes(letter) ? (
               <span key={i} className="letter">{letter}</span>
             ) : (
               <span key={i} className="blankSquare"></span>
@@ -47,7 +47,7 @@ const Game = ({
             <input 
               type="text" 
               name="letter" 
-              maxLenght="1" 
+              maxLength="1" 
               required 
               onChange={(e) => setLetter(e.target.value)} 
               value={letter} 
